@@ -155,11 +155,30 @@ footer {
 }
 
 /* Keep bullets but style each entry as a subtle pill */
-.participants ul {
-  list-style: disc;
-  margin-left: 18px;
-  padding-left: 8px;
+
+/* Hide bullet points for participants list */
+.participants-list {
+  list-style: none;
+  margin: 0.5em 0 0 0;
+  padding-left: 0;
   display: block;
+}
+
+.participant-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.delete-participant {
+  cursor: pointer;
+  color: #c00;
+  margin-left: 0.5em;
+  font-size: 1.1em;
+  transition: color 0.2s;
+}
+.delete-participant:hover {
+  color: #f33;
 }
 
 .participants li {
